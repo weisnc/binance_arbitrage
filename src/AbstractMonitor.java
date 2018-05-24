@@ -5,7 +5,6 @@ import java.math.BigDecimal;
 
 public abstract class AbstractMonitor {
 
-    //only watches this pair and updates relevant values to this pair
     public void doMessage(String message) throws JSONException {
         JSONObject jso = new JSONObject(message);
         if (null == jso) return;
